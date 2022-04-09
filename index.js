@@ -8,6 +8,10 @@ app.get("/nike/arrivo", (req, res) => {
     const url = "https://www.nike.com/it/launch?s=upcoming";
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
+
+    // Configure the navigation timeout
+    await page.setDefaultNavigationTimeout(0);
+    
     await page.goto(url);
     /*   await page.screenshot({ path: "example.png" }); */
 
