@@ -3,7 +3,7 @@ const puppeteer = require("puppeteer");
 const express = require("express");
 const app = express();
 
-app.get("/nike/arrivo", (req, res) => {
+app.get("/nike/update", (req, res) => {
   (async () => {
     const url = "https://www.nike.com/it/launch?s=upcoming";
     const browser = await puppeteer.launch();
