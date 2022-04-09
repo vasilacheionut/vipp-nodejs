@@ -8,9 +8,13 @@ Open terminal:
 - cd vipp-nodejs
 - npm install
 
+Npm global install
+- sudo npm install forever -g
+
 Run app
 - node index.js
 - npm start
+- npm stop
 
 
 Test App:
